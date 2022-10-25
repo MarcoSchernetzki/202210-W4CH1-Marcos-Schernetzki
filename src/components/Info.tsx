@@ -14,8 +14,11 @@ export function Info() {
             </header>
             <section className="controls">
                 <p className="info">
-                    {gentlemanState.filter((men) => men.selected === true)
-                        .length + " gentlemen pointing at you"}
+                    {
+                        // filtro el array de gentlemas con la condicion de selected = true y muestro su length
+                        gentlemanState.filter((men) => men.selected === true)
+                            .length + " gentlemen pointing at you"
+                    }
                 </p>
                 <button className="button button--select">Select all</button>
             </section>
