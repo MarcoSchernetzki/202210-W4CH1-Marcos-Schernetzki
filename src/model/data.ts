@@ -8,6 +8,10 @@ export interface IGentleman {
     alternativeText: string;
     selected: boolean;
 }
+export interface iState {
+    initialState: IGentleman[];
+    setState: () => void;
+}
 
 export const data: Array<IGentleman> = [
     {
@@ -18,7 +22,7 @@ export const data: Array<IGentleman> = [
         twitter: "@osbourne",
         picture: "bertin.jpg",
         alternativeText: "Osbourne pointing at you",
-        selected: true,
+        selected: false,
     },
     {
         name: "The Farytale",
@@ -38,6 +42,6 @@ export const data: Array<IGentleman> = [
         twitter: "@julius_churchs",
         picture: "julio.jpg",
         alternativeText: "Churchs pointing at you",
-        selected: true,
+        selected: false,
     },
 ];
