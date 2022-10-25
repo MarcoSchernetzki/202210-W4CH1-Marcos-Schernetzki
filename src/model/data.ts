@@ -8,6 +8,10 @@ export interface IGentleman {
     alternativeText: string;
     selected: boolean;
 }
+export interface iState {
+    initialState: IGentleman[];
+    setState: () => void;
+}
 
 export const data: Array<IGentleman> = [
     {
