@@ -14,12 +14,21 @@ export function ButtonGentleman({
         return setState(filterState);
     }
 
-    function handleButtonFav(state: IGentleman[]) {}
+    function handleButtonFav(state: IGentleman[], id: number) {
+        const newState = [...state];
+
+        newState.forEach((men) => {
+            if (men.id === id) {
+                men.selected = !men.selected;
+                console.log(men.selected);
+            }
+        });
+    }
     return (
         <>
             <i
                 onClick={() => {
-                    handleButtonFav(state);
+                    handleButtonFav(state, id);
                 }}
                 className="icon gentleman__icon fas fa-check"
             ></i>
