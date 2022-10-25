@@ -23,11 +23,10 @@ export function ButtonGentleman({
         ev: SyntheticEvent
     ) {
         const newState = [...state];
-        console.log(ev.nativeEvent.target);
+
         newState.forEach((men) => {
             if (men.id === id) {
                 men.selected = !men.selected;
-                console.log(men.selected);
             }
         });
         setState(newState);
