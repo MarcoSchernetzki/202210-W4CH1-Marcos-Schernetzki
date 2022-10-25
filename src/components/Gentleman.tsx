@@ -16,7 +16,7 @@ export function Gentleman({ men, state, setState }: IProps) {
                         alt="The Fary pointing at you"
                     />
                     <span className="gentleman__initial">
-                        {men.name.slice(0, 1)}
+                        {men.name.slice(0, 1).toLocaleUpperCase()}
                     </span>
                 </div>
                 <div className="gentleman__data-container">

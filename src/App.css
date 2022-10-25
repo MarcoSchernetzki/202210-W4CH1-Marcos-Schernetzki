@@ -140,3 +140,6 @@ h2 {
 .gentleman:hover .gentleman__avatar {
     transform: scaleX(-100%);
 }
+.fav {
+    display: inline-flex;
+}
