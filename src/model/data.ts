@@ -42,6 +42,6 @@ export const data: Array<IGentleman> = [
         twitter: "@julius_churchs",
         picture: "julio.jpg",
         alternativeText: "Churchs pointing at you",
-        selected: true,
+        selected: false,
     },
 ];

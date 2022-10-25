@@ -11,7 +11,7 @@ export function ButtonGentleman({
     function handleButtonDelete(state: IGentleman[], id: number) {
         const newState = [...state];
         const filterState = newState.filter((men) => men.id !== id);
-        return setState(filterState);
+        setState(filterState);
     }
 
     function handleButtonFav(state: IGentleman[], id: number) {
@@ -23,6 +23,7 @@ export function ButtonGentleman({
                 console.log(men.selected);
             }
         });
+        setState(newState);
     }
     return (
         <>

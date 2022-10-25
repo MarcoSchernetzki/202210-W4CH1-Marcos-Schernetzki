@@ -123,6 +123,12 @@ h2 {
     display: inline-flex;
     cursor: pointer;
 }
+.gentleman__icon--fav {
+    top: 20px;
+    background-color: #060;
+    display: inline-flex;
+    cursor: pointer;
+}
 
 .gentleman.selected .gentleman__icon,
 .gentleman:hover .gentleman__icon {
