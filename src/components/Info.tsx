@@ -25,7 +25,12 @@ export function Info() {
             <main className="main">
                 <ul className="gentlemen">
                     {gentlemanState.map((men) => (
-                        <Gentleman men={men}></Gentleman>
+                        <Gentleman
+                            men={men}
+                            state={gentlemanState}
+                            setState={setState}
+                            key={men.id}
+                        ></Gentleman>
                     ))}
                 </ul>
             </main>

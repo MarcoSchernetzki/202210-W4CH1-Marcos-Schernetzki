@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { IGentleman, data, iState } from "../model/data";
+import { IGentleman } from "../model/data";
 import { ButtonGentleman } from "./button-gentleman";
-
-export function Gentleman(
-    { men }: { men: IGentleman },
-    { state }: { state: iState[] }
-) {
+export interface IProps {
+    men: IGentleman;
+    setState: React.Dispatch<React.SetStateAction<IGentleman[]>>;
+    state: Array<IGentleman>;
+}
+export function Gentleman({ men, state, setState }: IProps) {
     return (
         <>
             <li className="gentleman">
@@ -42,7 +42,11 @@ export function Gentleman(
                         </li>
                     </ul>
                 </div>
-                <ButtonGentleman men={men} />
+                <ButtonGentleman
+                    state={state}
+                    setState={setState}
+                    id={men.id}
+                />
             </li>
         </>
     );
